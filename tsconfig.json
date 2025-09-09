@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                       // Modern JS features
+    "module": "CommonJS",                     // Node.js module system
+    "strict": true,                           // Enable strict type-checking
+    "esModuleInterop": true,                  // Allow default imports from CommonJS
+    "moduleResolution": "node",               // Resolve Node.js modules
+    "outDir": "./dist",                       // Compiled JS files go here
+    "rootDir": "./src",                       // Your TS source files
+    "resolveJsonModule": true,                // Allow importing JSON
+    "types": ["node", "playwright"],          // Type definitions for Node & Playwright
+    "skipLibCheck": true                      // Skip type checks of dependencies
+  },
+  "include": ["src", "tests"],                // Your folders with TS code
+  "exclude": ["node_modules", "dist"]         // Ignore these
+}
